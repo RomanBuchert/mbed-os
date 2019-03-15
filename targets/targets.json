@@ -3735,13 +3735,13 @@
             }
         },
         "macros_add": ["USB_STM_HAL"],
-        "overrides": { "lse_available": 1 },
+        "overrides": { "lse_available": 0 },
         "device_has_add": [
             "ANALOGIN",
             "ANALOGOUT",
             "CAN",
             "FLASH",
-            "INERRUPTIN",
+            "INTERRUPTIN",
             "I2C",
             "MPU",            
             "PORT_IN",
@@ -3750,8 +3750,7 @@
             "RTC",
             "SLEEP",
             "SPI",
-            "TRNG",
-            
+            "TRNG"
         ],
         "release_versions": ["2", "5"],
         "device_name": "STM32F407VE"
