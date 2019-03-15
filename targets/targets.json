@@ -3717,6 +3717,45 @@
         "release_versions": ["2"],
         "device_name": "STM32F334C8"
     },
+    "STM32_F4VE_BLACK_BOARD": {
+         "inherits": ["FAMILY_STM32"],
+         "core": "Cortex-M4F",
+         "extra_labels_add": [
+            "STM32F4",
+            "STM32F407",
+            "STM32F407xE",
+            "STM32F407VE"
+         ],
+        "supported_toolchains": ["ARM", "uARM", "GCC_ARM", "IAR"],
+        "config": {
+            "clock_source": {
+                "help": "Mask value : USE_PLL_HSE_EXTC (need HW patch) | USE_PLL_HSE_XTAL | USE_PLL_HSI",
+                "value": "USE_PLL_HSE_XTAL|USE_PLL_HSI",
+                "macro_name": "CLOCK_SOURCE"
+            }
+        },
+        "macros_add": ["USB_STM_HAL"],
+        "overrides": { "lse_available": 1 },
+        "device_has_add": [
+            "ANALOGIN",
+            "ANALOGOUT",
+            "CAN",
+            "FLASH",
+            "INERRUPTIN",
+            "I2C",
+            "MPU",            
+            "PORT_IN",
+            "PORT_OUT",
+            "PWMOUT",
+            "RTC",
+            "SLEEP",
+            "SPI",
+            "TRNG",
+            
+        ],
+        "release_versions": ["2", "5"],
+        "device_name": "STM32F407VE"
+    },
     "DISCO_F407VG": {
         "inherits": ["FAMILY_STM32"],
         "core": "Cortex-M4F",
