@@ -3735,7 +3735,7 @@
             }
         },
         "macros_add": ["USB_STM_HAL"],
-        "overrides": { "lse_available": 0 },
+        "overrides": { "lse_available": 1 },
         "device_has_add": [
             "ANALOGIN",
             "ANALOGOUT",
@@ -3743,7 +3743,7 @@
             "FLASH",
             "INTERRUPTIN",
             "I2C",
-            "MPU",            
+            "MPU",
             "PORT_IN",
             "PORT_OUT",
             "PWMOUT",
