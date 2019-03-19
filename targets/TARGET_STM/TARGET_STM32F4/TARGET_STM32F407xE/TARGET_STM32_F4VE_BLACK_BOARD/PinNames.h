@@ -297,8 +297,8 @@ typedef enum {
     /**** OSCILLATOR pins ****/
     RCC_OSC32_IN = PC_14,
     RCC_OSC32_OUT = PC_15,
-    RCC_OSC_IN = PH_0,
-    RCC_OSC_OUT = PH_1,
+    //RCC_OSC_IN = PH_0,
+    //RCC_OSC_OUT = PH_1,
 
     /**** DEBUG pins ****/
     SYS_JTCK_SWCLK = PA_14,
